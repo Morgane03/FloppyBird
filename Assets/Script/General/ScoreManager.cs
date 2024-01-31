@@ -6,9 +6,9 @@ public class ScoreManager : MonoBehaviour
     private static ScoreManager _instance;
     public static ScoreManager Instance { get { return _instance; } }
 
-    private static int score = 0;
+    private static int _score;
     [SerializeField]
-    private TextMeshProUGUI scoreText;
+    private TextMeshProUGUI _scoreText;
 
     private void Awake()
     {
@@ -22,19 +22,19 @@ public class ScoreManager : MonoBehaviour
 
     private void Start()
     {
-        score = 0;
-        scoreText.text = ScoreManager.score + "";
+        _score = 0;
+        _scoreText.text = ScoreManager._score + "";
     }
 
     public void IncreaseScore()
     {
-        score++;
-        scoreText.text = ScoreManager.score + "";
+        _score++;
+        _scoreText.text = ScoreManager._score + "";
     }
 
     public void ResetScore()
     {
-        score = 0;
-        scoreText.text = ScoreManager.score + "";
+        _score = 0;
+        _scoreText.text = ScoreManager._score + "";
     }
 }

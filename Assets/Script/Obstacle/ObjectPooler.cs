@@ -12,7 +12,7 @@ public class ObjectPooler : MonoBehaviour
 
     private List<GameObject> _pooledObjects;
 
-    public void Awake()
+    private void Awake()
     {
         Instance = this;
 
