@@ -1,0 +1,7 @@
+Différence liée au PlayerMovement
+	Pour une meilleure lisibilité j’ai séparé en deux méthode la rotation et le « saut » du joueur
+	J’ai aussi séparé en deux le « saut » du joueur pour une meilleur performance et meilleure lisibilité (l’une gère l’input l’autre l’impulsion)
+	J’ai aussi séparé le mouvement de la mort pour qu’un script ait une fonction
+
+Pour la gestion des obstacles 
+	J’ai séparé le mouvement des obstacles à leur apparition se qui était à l’origine sensé être dans le même script ainsi il n’y a plus d’Update dans le script qui permet le spawn d’obstacle 
